@@ -58,7 +58,7 @@ This should create a directory called `signatures` with the polynomial encodings
 You can then run validation with:
 
 ```bash
-python vllm_validate_poly.py --decode_model_name meta-llama/Llama-3.1-8B-Instruct --validate_model_name meta-llama/Llama-3.1-8B-Instruct --tp 1 --n_samples 4 --save_dir just4 --max_decode_tokens 512 --dataset_name stingning/ultrachat --dtype bfloat16 --attn flash
+python vllm_validate_poly.py --decode_model_name meta-llama/Llama-3.1-8B-Instruct --validate_model_name meta-llama/Llama-3.1-8B-Instruct --tp 1 --save_dir signatures --max_decode_tokens 512 --dtype bfloat16 --attn flash
 ```
 
 If the verification passes, you should see:
